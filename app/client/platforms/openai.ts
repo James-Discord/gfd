@@ -60,7 +60,7 @@ export class ChatGPTApi implements LLMApi {
   path(path: string): string {
     const accessStore = useAccessStore.getState();
 
-    let baseUrl = "";
+    let baseUrl = "https://api.mandrillai.tech/v1";
 
     if (accessStore.useCustomConfig) {
       const isAzure = accessStore.provider === ServiceProvider.Azure;
